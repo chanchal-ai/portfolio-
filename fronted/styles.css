@@ -1,0 +1,44 @@
+/* Custom styles for the portfolio */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section {
+  scroll-margin-top: 80px; /* Offset for sticky navbar */
+}
+
+img.rounded-circle {
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+footer {
+  font-size: 1rem;
+}
+
+@media (max-width: 767px) {
+  .display-4 {
+    font-size: 2.2rem;
+  }
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+  .card {
+    margin-bottom: 1rem;
+  }
+} 
